@@ -1,0 +1,4 @@
+name: Eugen Dizer
+logo: "/images/logo.jpg?raw=true"
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
