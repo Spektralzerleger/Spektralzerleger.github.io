@@ -1,7 +1,6 @@
-name: Eugen Dizer
+title: Eugen Dizer
 description: Physics student at the University of Heidelberg. Passionate about science, productivity and making the world a better place.
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-google_site_verification: google-site-verification=aOSpHxQXqlvUEVvpFK68lPHLXH2kEbRHE8ek10jIBls
 plugins:
   - jekyll-seo-tag
