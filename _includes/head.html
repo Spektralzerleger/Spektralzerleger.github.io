@@ -1,9 +1,17 @@
 <head>
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <!-- favicon
-	<link rel="shortcut icon" href="/img/ico/favicon.png">
-	-->
+    <title>
+        {%if page.title %}
+            {{ page.title }} | {{ site.name }}
+        {% else %}
+            {{ site.name }}
+        {% endif %}
+    </title>
 
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="shortcut icon" href="/images/favicon.ico">
+
+    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+
+    {% seo %}
     {% include analytics.html %}
 </head>
