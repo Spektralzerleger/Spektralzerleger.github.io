@@ -93,3 +93,7 @@ li.social a .mailLogo {
     border-radius: 10px;
 }
 .cv .button:hover {background-color: #e7e7e7; }
+.cv .entry { display: block; margin-bottom: 50px; }
+.cv .entry h3 { font-size: 1em; margin-bottom: -37px; }
+.cv .content p { font-size: 1em; margin-left: 250px; }
+.cv .content { display: block; overflow: hidden; margin-top: -16px; margin-bottom: -20px; }
