@@ -1,29 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+
+/* General */
+html { font-family: 'Roboto', sans-serif; }
 body { margin: 60px auto; width: 70%; }
 
-a { text-decoration: none; color: #999; }
-a:hover { text-decoration: underline; }
+/* Links */
+a { text-decoration: none; color: rgb(37, 46, 53); transition: 0.15s; transition-property: opacity; opacity: 0.6; }
+a:hover { text-decoration: underline; opacity: 1.0; }
 
-p, ul { font-size: 1.5em; line-height: 1.4em; color: #333; }
+p, ul { font-size: 1.4em; line-height: 1.4em; color: #333; }
 
+/* Headers */
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
-h1 { font-size: 3em;  }
-h2 { font-size: 2.7em; }
-h3 { font-size: 2.3em; }
-h4 { font-size: 1.9em; }
+h1 { font-size: 2.7em;  }
+h2 { font-size: 2.3em; }
+h3 { font-size: 1.9em; }
+h4 { font-size: 1.6em; }
 
-nav ul, footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+/* Navbar and Footer */
+nav ul { font-size: 1.2em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
+footer ul { font-size: 1em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 20px; }
+footer { border-top: 1px solid #d5d5d5; font-size: .8em; text-align: center; }
 
-footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
+li.social { float: right; margin-right: 10px; }
+li.social a {
+    margin: 0;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 34px;
+    height: 34px;
+    transition: 0.15s;
+    transition-property: opacity;
+    opacity: 0.5;
+    overflow: hidden;
+    letter-spacing: -0.31em;
+}
+li.social a:hover {
+    opacity: 1.0;
+}
+li.social a .githubLogo {
+    background: url('/images/social/github.png') center no-repeat;
+    background-size: 32px 32px
+}
+li.social a .linkedinLogo {
+    background: url('/images/social/linkedin.png') center no-repeat;
+    background-size: 32px 32px
+}
+li.social a .rssLogo {
+    background: url('/images/social/rss.png') center no-repeat;
+    background-size: 32px 32px
+}
+li.social a .mailLogo {
+    background: url('/images/social/mail.png') center no-repeat;
+    background-size: 32px 32px
+}
+
+
+/* Images */
+.img-circle { border-radius: 50%; }
+.avatar { float: left; margin-right: 20px; }
+.clearfix { overflow: auto; }                 /* indent the navbar ... */
+
 
 /* Blog */
-ul.posts { margin: 20px auto 40px; font-size: 1.5em; }
-ul.posts li { list-style: none; }
+.date { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; font-weight: bold; margin: -20px 0 0 0; }
+.posts {
+    padding: 1rem 2rem 1rem 2rem;  /* top  right  bottom left */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.2);
+}
+.posts h1 { font-size: 1.4em; }
+.posts p { font-size: 1em; }
 
 /* CV */
 .cv { margin: 0px 0px 60px; }
-.cv h1 { font-size: 3em; }
+.cv h1 { font-size: 2.3em; }
 .cv h2 { font-size: 2em; }
 .cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 .cv address, .cv p { font-size: 1.2em; }
-.cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+.cv .download { float: right; font-size: .8em; text-transform: uppercase; line-height: 3em; }
+.cv .button {
+    background-color: white;
+    padding: 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 20px;
+    transition-duration: 0.15s;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+}
+.cv .button:hover {background-color: #e7e7e7; }
