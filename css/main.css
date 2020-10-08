@@ -2,7 +2,11 @@
 
 /* General */
 html { font-family: 'Roboto', sans-serif; }
-body { margin: 60px auto; width: 70%; }
+body { margin: 50px auto; width: 70%; }
+
+@media (max-width: 1024px) {
+    body { width: 80%; }
+}
 
 /* Links */
 a { text-decoration: none; color: rgb(37, 46, 53); transition: 0.15s; transition-property: opacity; opacity: 0.6; }
@@ -12,10 +16,10 @@ p, ul { font-size: 1.4em; line-height: 1.4em; color: #333; }
 
 /* Headers */
 h1, h2, h3, h4 { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
-h1 { font-size: 2.7em;  }
-h2 { font-size: 2.3em; }
-h3 { font-size: 1.9em; }
-h4 { font-size: 1.6em; }
+h1 { font-size: 2.5em;  }
+h2 { font-size: 2.1em; }
+h3 { font-size: 1.7em; }
+h4 { font-size: 1.4em; }
 
 /* Navbar and Footer */
 nav ul { font-size: 1.2em; font-family: 'Helvetica', 'Arial', 'Sans-Serif'; padding: 0px; list-style: none; font-weight: bold; }
@@ -59,7 +63,7 @@ li.social a .mailLogo {
 
 /* Images */
 .img-circle { border-radius: 50%; }
-.avatar { float: left; margin-right: 20px; }
+.avatar { float: left; margin-right: 30px; margin-bottom: 5px; }
 .clearfix { overflow: auto; }                 /* indent the navbar ... */
 
 
@@ -71,16 +75,17 @@ li.social a .mailLogo {
     border-radius: 10px;
     box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.2);
 }
-.posts h1 { font-size: 1.4em; }
-.posts p { font-size: 1em; }
+.posts h1 { font-size: 1.2em; }
+.posts p { font-size: 0.8em; }
 
 /* CV */
 .cv { margin: 0px 0px 60px; }
-.cv h1 { font-size: 2.3em; }
-.cv h2 { font-size: 2em; }
+.cv h1 { font-size: 2em; }
+.cv h2 { font-size: 1.7em; }
 .cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
-.cv address, .cv p { font-size: 1.2em; }
-.cv .download { float: right; font-size: .8em; text-transform: uppercase; line-height: 3em; }
+.cv address { font-size: 1em; margin-bottom: 40px; }
+.cv p { font-size: 1em; }
+.cv .download { float: right; font-size: .8em; text-transform: uppercase; line-height: 2.5em; }
 .cv .button {
     background-color: white;
     padding: 0px 10px;
@@ -95,5 +100,9 @@ li.social a .mailLogo {
 .cv .button:hover {background-color: #e7e7e7; }
 .cv .entry { display: block; margin-bottom: 50px; }
 .cv .entry h3 { font-size: 1em; margin-bottom: -37px; }
-.cv .content p { font-size: 1em; margin-left: 250px; }
+.cv .content p { font-size: 1em; margin-left: 40%; }
 .cv .content { display: block; overflow: hidden; margin-top: -16px; margin-bottom: -20px; }
+
+@media (max-width: 576px) {
+    .cv .content p { margin-left: 175px; }
+}
