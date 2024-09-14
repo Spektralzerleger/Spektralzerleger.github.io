@@ -1,0 +1,53 @@
+.social-layer {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  color: lighten(gray, 30%);
+  font-size: 1.5em;
+
+  .social-icons {
+    ul {
+     list-style: none;
+      li {
+        display: inline;
+      }
+    }
+  }
+}
+
+li.social { text-align: center; }
+li.social a {
+    margin: 0;
+    display: inline-block;
+    text-indent: -9999px;
+    width: 44px;
+    height: 34px;
+    transition: 0.15s;
+    transition-property: opacity;
+    opacity: 0.5;
+    overflow: visible;
+    letter-spacing: -0.31em;
+}
+li.social a:hover {
+    opacity: 1.0;
+}
+li.social a .githubLogo {
+    background: url('/assets/social/github.png') center no-repeat;
+    background-size: 42px 42px
+}
+li.social a .linkedinLogo {
+    background: url('/assets/social/linkedin.png') center no-repeat;
+    background-size: 42px 42px
+}
+li.social a .scholarLogo {
+    background: url('/assets/social/google-scholar.png') center no-repeat;
+    background-size: 32px 32px
+}
+li.social a .rssLogo {
+    background: url('/assets/social/rss.png') center no-repeat;
+    background-size: 42px 42px
+}
+li.social a .mailLogo {
+    background: url('/assets/social/mail.png') center no-repeat;
+    background-size: 42px 42px
+}

@@ -1,0 +1,32 @@
+/* Menu Card */
+.menu-card__header{ text-align: center; margin-bottom: 0.75rem }
+
+.center{ justify-content: center; }
+
+/* Links */
+a { text-decoration: none; color: rgb(0, 110, 255); transition: 0.15s; transition-property: opacity; opacity: 0.6; }
+a:hover { text-decoration: underline; opacity: 1.0; }
+
+/* CV */
+.cv h1 { font-size: 2em; }
+.cv h2 { font-size: 1.7em; }
+.cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+.cv address { font-size: 1em; margin-bottom: 40px; }
+.cv p { font-size: 1em; }
+.cv .download { float: right; font-size: .8em; text-transform: uppercase; line-height: 2.5em; }
+.cv .button {
+    background-color: white;
+    padding: 0px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 20px;
+    transition-duration: 0.15s;
+    border: 2px solid #e7e7e7;
+    border-radius: 10px;
+}
+.cv .button:hover { background-color: #e7e7e7; }
+.cv .entry { display: block; margin-bottom: 50px; }
+.cv .entry h3 { font-size: 1em; margin-bottom: -25px; }
+.cv .content p { font-size: 1em; margin-left: 40%; margin-top: 3.5px; }
+.cv .content { display: block; margin-bottom: 10px; }

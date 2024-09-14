@@ -1,6 +1,30 @@
+# Site settings
 title: Eugen Dizer
-description: Physics student at the University of Heidelberg. Passionate about science, productivity and making the world a better place.
+description: PhD student at the University of Heidelberg. Passionate about science, productivity and making the world a better place.
+google_analytics: UA-179445855-1
+
+# Author
+author:
+  name: Eugen Dizer
+  desc: PhD Student in Theoretical Physics
+  selfie: assets/img/profile.jpg
+
+# Social
+social:
+  email: eugen9898@web.de
+  github: Spektralzerleger
+  google_scholar: user=_xRQDj4AAAAJ&hl=en
+  linkedin: eugen-dizer-899875153
+
+# Navigation links
+navigation:
+  - {name: 'About', link: '/'}
+  - {name: 'Publications', link: '/publications'}
+  - {name: 'CV', link: '/cv'}
+
+# Build settings
 markdown: kramdown
-permalink: /blog/:year/:month/:day/:title
+
+# Gems
 plugins:
   - jekyll-seo-tag

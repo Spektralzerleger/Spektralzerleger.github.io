@@ -1,0 +1,31 @@
+{% if site.social.email %}
+<li class="social">
+  <a href="mailto:{{ site.social.email }}" title="Mail">
+    <div class="mailLogo">Mail</div>
+  </a>
+</li>
+{% endif %}
+
+{% if site.social.github %}
+<li class="social">
+  <a href="https://github.com/{{ site.social.github }}" title="GitHub">
+    <div class="githubLogo">GitHub</div>
+  </a>
+</li>
+{% endif %}
+
+{% if site.social.google_scholar %}
+<li class="social">
+  <a href="https://scholar.google.com/citations?{{ site.social.google_scholar }}" title="Google Scholar">
+    <div class="scholarLogo">Google Scholar</div>
+  </a>
+</li>
+{% endif %}
+
+{% if site.social.linkedin %}
+<li class="social">
+  <a href="https://de.linkedin.com/in/{{ site.social.linkedin }}" title="LinkedIn">
+    <div class="linkedinLogo">LinkedIn</div>
+  </a>
+</li>
+{% endif %}
